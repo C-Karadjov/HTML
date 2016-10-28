@@ -1,0 +1,55 @@
+table,tr,td{
+	border-collapse: collapse;
+	border: 1px solid #b5c3e0;
+	padding: 5px;
+	font: 12px Arial;
+}
+thead,tfoot{
+	background-color: #dfe3e8;
+}
+#productNameWidth{
+	width: 250px;
+}
+#unitPriceWidth{
+	width: 160px;
+}
+#quantityWidth{
+	width: 160px;
+}
+#unitStockWidth{
+	width: 180px;
+}
+.sizeImage{
+	height: 23px;
+	width: 23px;
+	vertical-align: middle;
+}
+.pages{
+	vertical-align: middle;
+}
+.pageSize{
+	padding-left: 15px;
+	vertical-align: middle;
+}
+span{
+	padding-left: 420px;
+}
+#dropDown{
+	vertical-align: middle;
+}
+.productID{
+	width: 30px;
+}
+.productName{
+	width: 140px;
+}
+.unitPrice{
+	width: 85px;
+}
+.quantity{
+	width: 85px;
+}
+.unit{
+	width: 85px;
+}
+

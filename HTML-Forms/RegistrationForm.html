@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+	<style>
+	table{
+		border-collapse: collapse
+	}
+	table,tr,td{
+		border: 1px solid black;
+		}
+	textarea[name=Adress] {
+		width: 300px;
+		height: 50px
+	}
+	textarea[name=Comments] {
+		width: 300px;
+		height: 80px
+	}
+	.textRight {
+		width: 50px;
+		padding: 6px;
+		text-align: right;
+		font-weight: bold;
+		font-size: 17px
+	}
+	td.endForm {
+		text-align: center;
+		background-color: #d1ede1;
+		padding: 6px
+	}
+	.fieldWidth{
+		width: 320px;
+	}
+	.month{
+		width: 30px;
+	}
+	.day{
+		width: 30px;
+	}
+	.year{
+		width: 70px;
+	}
+	.number{
+		width: 145px
+	}
+	.textLeft{
+		padding: 6px
+	}
+	.country{
+		width: 180px
+	}
+	</style>
+</head>
+<body>
+<form action="#" method="get">
+	<table>
+		<tr>
+			<td class="textRight"><label>Last Name</label></td>
+			<td class="textLeft"><input type="text" name="Last name" class="fieldWidth"></td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>First Name</label></td>
+			<td class="textLeft"><input type="text" name="First name" class="fieldWidth"></td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Adress</label></td>
+			<td class="textLeft"><textarea name="Adress"></textarea></td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>City</label></td>
+			<td class="textLeft">
+				<input type="text" name="City" size="21">
+				<label>State</label>
+				<input type="text" name="City" size="10">
+			</td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Zip/Postal Code</label></td>
+			<td class="textLeft"><input type="number" name="Postal code" min="1" max="9999999"></td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Country</label></td>
+			<td class="textLeft">
+			<select class="country">
+				<option selected="select">Bulgaria</option>
+				<option>Germany</option>
+				<option>Italy</option>
+				<option>Spain</option>
+				<option>England</option>
+			</select>	
+			</td>
+		<tr/>
+		<tr>
+			<td class="textRight"><label>Phone (country code, area code, number)</label></td>
+			<td class="textLeft">
+			(+<input type="number" name="Country code" placeholder="359" 
+			min="100" max="999">)
+			<input type="number" name="Area code" placeholder="88"
+			min="100" max="999">
+			- <input type="number" name="Number" class="number">
+			</td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>E-mail</label></td>
+			<td class="textLeft"><input type="email" name="Email" class="fieldWidth"></td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Birth date</label></td>
+			<td class="textLeft">
+			<label>Month</label>
+			<input type="number" name="Month" class="month">
+			<label>Day</label>
+			<input type="number" name="Day" class="day">
+			<label>Year(4 digit)</label>
+			<input type="number" name="Year" class="year">
+			</td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Gander</label></td>
+			<td class="textLeft">
+			<select>
+				<option selected="select">Male</option>
+				<option>Female</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Starting date</label></td>
+			<td class="textLeft">
+				<input type="radio" name="Starting date" id="spring">
+				<label for="spring">Spring 2016</label>
+				<input type="radio" name="Starting date" id="summer">
+				<label for="summer">Summer 2016</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="textRight"><label>Comments/Questions</label></td>
+			<td class="textLeft"><textarea name="Comments" placeholder="Please send me more information about the lodging."></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="endForm">
+				<input type="submit" name="Submit" value="Submit" ">
+				<input type="reset" name="Reset" value="Clear This Form">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
